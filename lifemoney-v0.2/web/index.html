@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08162f" />
+  <meta name="description" content="LifeMoney — India-first life and money simulator" />
+  <title>LifeMoney | Your life, funded</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home"><span class="brand-mark">L</span><span>LifeMoney</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-section="home"><span>⌂</span>Overview</button>
+        <button class="nav-item" data-section="goals"><span>◎</span>Goals</button>
+        <button class="nav-item" data-section="fire"><span>↗</span>FIRE</button>
+        <button class="nav-item" data-section="dreams"><span>✦</span>Dreams</button>
+      </nav>
+      <div class="sidebar-card">
+        <div class="eyebrow">LIFEMONEY BETA</div>
+        <strong>Plan life, not just returns.</strong>
+        <p>Goal planning and simulations for Indian households.</p>
+      </div>
+      <div class="sidebar-footer">Educational planning · No security recommendations</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="mobile-brand"><span class="brand-mark">L</span> LifeMoney</div>
+          <p class="muted" id="greeting">Good evening</p>
+          <h1 id="page-title">Your financial life, at a glance</h1>
+        </div>
+        <div class="top-actions">
+          <span class="api-pill" id="api-status"><span class="dot"></span>Checking cloud</span>
+          <button class="avatar" title="Demo profile">SK</button>
+        </div>
+      </header>
+
+      <section class="page active" id="home">
+        <div class="demo-banner">Demo household profile · persistence and sign-in come in the next milestone</div>
+        <div class="hero-grid">
+          <article class="card networth-card">
+            <div class="card-head"><span>Net worth</span><span class="trend">+11.4% ↗</span></div>
+            <div class="big-number">₹1.84 Cr</div>
+            <div class="networth-bars" aria-label="Asset mix">
+              <span style="width:42%"></span><span style="width:25%"></span><span style="width:18%"></span><span style="width:15%"></span>
+            </div>
+            <div class="legend"><span>Equity 42%</span><span>Retirement 25%</span><span>Debt 18%</span><span>Cash 15%</span></div>
+          </article>
+
+          <article class="card freedom-card">
+            <div class="card-head"><span>Freedom score</span><span class="info">i</span></div>
+            <div class="score-wrap"><div class="score-ring"><span>74</span><small>/100</small></div><div><strong>On a good path</strong><p>Your goals are mostly funded, but FIRE can be strengthened.</p></div></div>
+          </article>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-icon">₹</div><div><span>Safe to spend this month</span><strong>₹63,500</strong><small>After goals & investing</small></div></article>
+          <article class="metric-card"><div class="metric-icon">⌛</div><div><span>Projected FIRE age</span><strong>51</strong><small>Base assumptions</small></div></article>
+          <article class="metric-card"><div class="metric-icon">✓</div><div><span>Goals on track</span><strong>4 / 5</strong><small>1 needs attention</small></div></article>
+        </div>
+
+        <div class="section-head"><div><span class="eyebrow">DECISION ENGINE</span><h2>What do you want to do with your money?</h2></div></div>
+        <div class="action-grid">
+          <button class="action-card" data-jump="dreams"><span class="action-emoji">✨</span><strong>Can I afford it?</strong><p>See the future cost of a big spend.</p><b>Simulate →</b></button>
+          <button class="action-card" data-jump="goals"><span class="action-emoji">🎓</span><strong>Plan a goal</strong><p>Education, wedding, home or travel.</p><b>Plan →</b></button>
+          <button class="action-card" data-jump="fire"><span class="action-emoji">🏖️</span><strong>Can I retire early?</strong><p>Stress-test your retirement runway.</p><b>Check FIRE →</b></button>
+        </div>
+
+        <div class="two-col">
+          <article class="card">
+            <div class="card-head"><div><span class="eyebrow">GOAL HEALTH</span><h3>Your life map</h3></div><button class="text-button" data-jump="goals">View all</button></div>
+            <div class="goal-row"><div class="goal-icon">🎓</div><div class="grow"><strong>Child education</strong><div class="progress"><span style="width:78%"></span></div><small>78% funded · Target 2035</small></div><b>₹1.4 Cr</b></div>
+            <div class="goal-row"><div class="goal-icon">🏡</div><div class="grow"><strong>Dream home</strong><div class="progress"><span style="width:61%"></span></div><small>61% funded · Target 2031</small></div><b>₹2.5 Cr</b></div>
+            <div class="goal-row"><div class="goal-icon">🇯🇵</div><div class="grow"><strong>Japan</strong><div class="progress"><span style="width:72%"></span></div><small>72% funded · Target 2028</small></div><b>₹8 L</b></div>
+          </article>
+
+          <article class="card insight-card">
+            <span class="eyebrow">MONEY INSIGHT</span>
+            <h3>Your next ₹10,000/month matters.</h3>
+            <p>If invested for 12 years at the current base assumption, it can materially strengthen your retirement buffer instead of disappearing into lifestyle creep.</p>
+            <button class="primary compact" data-jump="fire">Explore retirement</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="goals">
+        <div class="workspace-grid">
+          <article class="card form-card">
+            <div class="eyebrow">GOAL PLANNER</div><h2>Turn a dream into a monthly number</h2><p class="muted">The engine adjusts today’s cost for inflation and calculates the monthly SIP required.</p>
+            <form id="goal-form">
+              <label>Goal today (₹)<input id="goal-cost" type="number" min="1" value="5000000" required></label>
+              <div class="form-grid"><label>Years away<input id="goal-years" type="number" min="1" max="80" value="10" required></label><label>Existing corpus (₹)<input id="goal-corpus" type="number" min="0" value="1000000"></label></div>
+              <div class="form-grid"><label>Goal inflation (%)<input id="goal-inflation" type="number" step="0.1" value="8"></label><label>Expected return (%)<input id="goal-return" type="number" step="0.1" value="10"></label></div>
+              <label>Annual SIP step-up (%)<input id="goal-step" type="number" step="0.1" value="10"></label>
+              <button class="primary" type="submit">Calculate my plan</button>
+            </form>
+          </article>
+          <article class="card result-card" id="goal-result">
+            <span class="result-kicker">LIVE CLOUD CALCULATION</span><h3>Your goal result will appear here</h3><p>Change the assumptions and calculate. The browser calls the Railway-hosted Python engine.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="fire">
+        <div class="workspace-grid">
+          <article class="card form-card">
+            <div class="eyebrow">RETIREMENT / FIRE</div><h2>How early can your money buy freedom?</h2><p class="muted">Year-by-year retirement cash-flow simulation with inflation and post-retirement returns.</p>
+            <form id="fire-form">
+              <div class="form-grid"><label>Current age<input id="fire-age" type="number" value="38"></label><label>Retire at<input id="fire-retire" type="number" value="50"></label></div>
+              <div class="form-grid"><label>Monthly expense (₹)<input id="fire-expense" type="number" value="100000"></label><label>Current corpus (₹)<input id="fire-corpus" type="number" value="18000000"></label></div>
+              <label>Monthly investment (₹)<input id="fire-invest" type="number" value="100000"></label>
+              <details><summary>Advanced assumptions</summary><div class="form-grid details-grid"><label>Inflation (%)<input id="fire-inflation" type="number" step="0.1" value="6"></label><label>Pre-retirement return (%)<input id="fire-pre" type="number" step="0.1" value="10"></label><label>Post-retirement return (%)<input id="fire-post" type="number" step="0.1" value="8"></label><label>Annual step-up (%)<input id="fire-step" type="number" step="0.1" value="10"></label><label>Life expectancy<input id="fire-life" type="number" value="90"></label></div></details>
+              <button class="primary" type="submit">Simulate my FIRE plan</button>
+            </form>
+          </article>
+          <article class="card result-card" id="fire-result"><span class="result-kicker">RETIREMENT ENGINE</span><h3>Your retirement runway will appear here</h3><p>We’ll show projected retirement corpus, future monthly expense and whether the corpus survives.</p></article>
+        </div>
+      </section>
+
+      <section class="page" id="dreams">
+        <div class="workspace-grid">
+          <article class="card form-card">
+            <div class="eyebrow">DREAM MODE</div><h2>Can I afford it without hurting my future?</h2><p class="muted">Test a car, holiday, penthouse, sabbatical or any major spend.</p>
+            <div class="dream-chips"><button type="button" data-price="800000">✈️ Europe</button><button type="button" data-price="7500000">🏎️ Luxury car</button><button type="button" data-price="40000000">🏙️ Penthouse</button><button type="button" data-price="1500000">🌍 Safari</button></div>
+            <form id="afford-form">
+              <label>Purchase / dream cost (₹)<input id="afford-price" type="number" value="2000000"></label>
+              <div class="form-grid"><label>Liquid corpus (₹)<input id="afford-liquid" type="number" value="5000000"></label><label>Protected reserve (₹)<input id="afford-reserve" type="number" value="1200000"></label></div>
+              <div class="form-grid"><label>Monthly surplus (₹)<input id="afford-surplus" type="number" value="100000"></label><label>Opportunity return (%)<input id="afford-return" type="number" step="0.1" value="8"></label></div>
+              <label>Opportunity-cost horizon (years)<input id="afford-horizon" type="number" value="10"></label>
+              <button class="primary" type="submit">Can I afford it?</button>
+            </form>
+          </article>
+          <article class="card result-card" id="afford-result"><span class="result-kicker">AFFORDABILITY ENGINE</span><h3>Spend with context, not guilt</h3><p>LifeMoney protects your reserve, checks affordability and shows what the same money could have grown to.</p></article>
+        </div>
+      </section>
+
+      <footer>LifeMoney v0.3 preview · India-first educational planning · Calculations are simulations, not investment advice.</footer>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
